@@ -1,5 +1,5 @@
 const contentLetterSrart_actived = "Chúc chị sinh nhật vui vẻ " //Lời mở đầu cho bức thư
-const mainContentLetter = "Chcu1 chị sinh nhật vui vẻ " //Nội dung của bức thư
+const mainContentLetter = " Chúc chị sinh nhật vui vẻ, tuổi mới xinh lại thêm xinh, duyên lại càng thêm duyên và yêu đời nhé!" //Nội dung của bức thư
 const audio = document.getElementById("audio");
 // Gắn 1 đường link ảnh bất kì
 let imgStart = document.querySelector(".myAI"); //Hình ảnh xuất hiện trong lời mở đầu của bức thư
@@ -50,10 +50,6 @@ document.querySelector("#mess").addEventListener("change", function () { //Hiệ
         document.querySelector(".mainContent").innerHTML = "";
     }
 })
-function playsong()
-{
-    audio.play();
-}
 document.querySelector(".recieve").addEventListener("click",() => 
 {
     document.querySelector(".startLetter").classList.add("close");
