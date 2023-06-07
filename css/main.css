@@ -17,7 +17,7 @@ body {
     position: fixed;
     height: 100%;
     width: 100%;
-    background-image: url("/HBD/image/348356027_6233197616734267_7554584181494611948_n.png");
+    background-image: url("../image/348356027_6233197616734267_7554584181494611948_n.png");
     background-attachment: fixed;
     background-position: center;
     background-size: auto;
@@ -40,7 +40,7 @@ body {
 .startLetter.active {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10px);
     transition: .5s;
 }
 
@@ -127,12 +127,11 @@ body {
 }
 
 /* ---------------------------------------------------------------- */
-.backgroundParty
-{
+.backgroundParty {
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url("/HBD/image/pts.png");
+    background-image: url("../image/pts.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,19 +139,23 @@ body {
 }
 
 .picture {
-    position: absolute;
+    position:fixed;
     size: 100px;
     bottom: 30px;
     width: 150px;
     animation: animateBalloon 1s ease-in-out infinite alternate;
     z-index: 5;
+    display: grid;
 }
 
 .picture1{
+   position: absolute;
     left: 30%;
+    transform: translate(-50%,-50%s);
 }
 
 .picture2 {
+    position:absolute;
     right: 30%;
 }
 
@@ -184,19 +187,19 @@ body {
 
 
 .letterForm {
-    position: absolute;
+    position: fixed;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
+    width: 120px;
     transition: .5s;
     z-index: 6;
 }
 
 .letterForm::before {
-    position: absolute;
+    position: fixed;
     background-color: #e69c9f;
-    width: 100px;
+    width: 120px;
     height: 100px;
     content: "";
     bottom: 0;
@@ -205,7 +208,7 @@ body {
 }
 
 .letterForm::after {
-    position: absolute;
+    position: fixed;
     width: 100%;
     background-color: #000;
     content: "";
@@ -216,7 +219,7 @@ body {
 }
 
 .content {
-    position: absolute;
+    position: fixed;
     background-color: #F2EEE4;
     width: 80%;
     left: 50%;
@@ -246,7 +249,7 @@ body {
 }
 
 .designBox::after {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -354,7 +357,7 @@ body {
     }
   
     .bannerParty {
-        position: absolute;
+        position:fixed;
         top: 100px;
         width: 100%;
         max-width: 100%;
@@ -362,20 +365,6 @@ body {
         transform: translate(-50%, 0);
         animation: animateBannerMobile 1s ease-in-out 1s infinite alternate;
     }
-
-    .picture {
-        bottom: 100px;
-        width: 100px;
-    }
-
-    .picture2{
-        left: 30px;
-    }
-
-    .picture1{
-        right: 30px;
-    }
-
     .content {
         width: 80%;
         left: 50%;
