@@ -12,7 +12,8 @@ body {
     width: 100%;
     overflow: hidden;
 }
-.startForm {
+.startForm 
+{
     z-index: 7;
     position: fixed;
     height: 100%;
