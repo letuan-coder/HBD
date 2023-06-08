@@ -87,7 +87,7 @@ function createLight(a) {
         randomTop = Math.floor(Math.random() * height / 2);
         var color = "white";
         var blur = Math.floor(Math.random() * 2);
-        var widthEle = Math.floor(Math.random() * 5) + 15;
+        var widthEle = Math.floor(Math.random() * 4) + 15;
         var moveTime = Math.floor(Math.random() * 4) + 4;
 
         var div = document.createElement("div");
@@ -99,7 +99,7 @@ function createLight(a) {
         div.style.height = "0px";
         div.style.width = "0px";
 
-        div.style.height = widthEle * Math.floor(Math.random() * 4 + 1) + "px";
+        div.style.height = widthEle * Math.floor(Math.random() * 2 + 1) + "px";
         div.style.width = widthEle + "px";
         div.style.marginLeft = randomLeft + "px"
         div.style.marginTop = randomTop + "px"
