@@ -12,8 +12,7 @@ body {
     width: 100%;
     overflow: hidden;
 }
-.startForm 
-{
+.startForm {
     z-index: 7;
     position: fixed;
     height: 100%;
@@ -141,24 +140,28 @@ body {
 }
 
 .picture {
-    position:fixed;
+    position:absolute;
     size: 100px;
     bottom: 30px;
     width: 150px;
     animation: animateBalloon 1s ease-in-out infinite alternate;
     z-index: 5;
-    display: grid;
 }
 
 .picture1{
-   position: absolute;
-    left: 30%;
-    transform: translate(-50%,-50%s);
+    object-fit: cover;
+    object-position: bottom;
+    left: 25px;
+    width: 200px;
 }
 
-.picture2 {
-    position:absolute;
-    right: 30%;
+.picture2 
+{
+    object-fit: cover;
+    object-position: bottom;
+    right: 25px;
+    width: 200px;
+
 }
 
 .bannerParty {
@@ -167,6 +170,7 @@ body {
     transform: translate(-50%, 20px);
     animation: animateBanner 1s ease-in-out 1s infinite alternate;
     z-index: 5;
+    object-fit: contain;
 }
 
 @keyframes animateBalloon {
@@ -360,7 +364,7 @@ body {
   
     .bannerParty {
         position:fixed;
-        top: 100px;
+        top: 80px;
         width: 100%;
         max-width: 100%;
         left: 50%;
