@@ -23,7 +23,8 @@ body {
     background-size: auto;
 }
 
-.startLetter {
+.startLetter
+{
     position: absolute;
     top: 0px;
     left: 50%;
