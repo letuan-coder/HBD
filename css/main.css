@@ -23,8 +23,7 @@ body {
     background-size: auto;
 }
 
-.startLetter 
-{
+.startLetter {
     position: absolute;
     top: 0px;
     left: 50%;
@@ -129,17 +128,43 @@ body {
 }
 
 /* ---------------------------------------------------------------- */
-.backgroundParty {
+.backgroundParty
+{
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url("../image/pts.png");
+    background-image: url("../image/pts.png"),url("../image/IMG_47.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    animation: changes 15s infinite ease-in-out;
 }
 
+@keyframes changes{
+    0%{
+        background-image: url("../image/IMG_47.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    50%{
+        
+        background-image: url("../image/pts.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    100%{
+        background-image: url("../image/IMG_4738.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
 .picture {
     position:absolute;
     size: 100px;
@@ -150,15 +175,16 @@ body {
 }
 
 .picture1{
-    object-fit: cover;
+    object-fit: contain;
     object-position: bottom;
     left: 25px;
     width: 150px;
+    
 }
 
 .picture2 
 {
-    object-fit: cover;
+    object-fit: contain;
     object-position: bottom;
     right: 25px;
     width: 200px;
