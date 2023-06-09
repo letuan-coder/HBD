@@ -179,7 +179,7 @@ body {
 .picture1{
     object-fit: contain;
     object-position: bottom;
-    left: 25px;
+    left: 25%;
     width: 150px;
     
 }
@@ -188,7 +188,7 @@ body {
 {
     object-fit: contain;
     object-position: bottom;
-    right: 25px;
+    right: 25%;
     width: 200px;
 
 }
@@ -429,7 +429,7 @@ body {
     {
         object-fit: cover;
         object-position: bottom;
-        left: 25px;
+        left: 10px;
         width: 150px;
         
     }
@@ -437,7 +437,7 @@ body {
     {
         object-fit: cover;
         object-position: bottom;
-        right: 25px;
+        right: 10px;
         width: 200px;
 }
 
