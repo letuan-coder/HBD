@@ -12,7 +12,8 @@ body {
     width: 100%;
     overflow: hidden;
 }
-.startForm {
+.startForm 
+{
     z-index: 7;
     position: fixed;
     height: 100%;
@@ -23,8 +24,7 @@ body {
     background-size: auto;
 }
 
-.startLetter
-{
+.startLetter {
     position: absolute;
     top: 0px;
     left: 50%;
@@ -114,7 +114,8 @@ body {
     transition: .5s;
 }
 
-.recieve:hover {
+.recieve:hover 
+{
     cursor: grab;
     box-shadow: 4px 4px 4px gray;
 }
@@ -134,17 +135,17 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url("../image/pts.png"),url("../image/IMG_47.png");
+    table-layout: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    animation: changes 15s infinite ease-in-out;
+    animation: changes 15s infinite;
 }
+ @keyframes changes
+{
+    0%{
 
-@keyframes changes{
-    0%
-    {
         background-image: url("../image/IMG_47.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -176,14 +177,14 @@ body {
     z-index: 5;
 }
 
-.picture1{
+.picture1
+{
     object-fit: contain;
     object-position: bottom;
     left: 25%;
     width: 150px;
     
 }
-
 .picture2 
 {
     object-fit: contain;
@@ -192,7 +193,6 @@ body {
     width: 200px;
 
 }
-
 .bannerParty {
     position: absolute;
     left: 50%;
@@ -202,7 +202,7 @@ body {
     object-fit: contain;
 }
 
-@keyframes animateBalloon {
+@keyframes animatePicture {
     to {
         transform: translateY(-30px);
     }
@@ -347,19 +347,23 @@ body {
 }
 
 /* ---------------------------KEYFRAME---------------------- */
-@keyframes animateStartLetter {
-    from {
+@keyframes animateStartLetter 
+{
+    from 
+    {
         transform: rotate(30deg) translateY(60%);
     }
 
-    to {
+    to 
+    {
         transform: rotate(-30deg) translateY(60%);
     }
 }
 
 /* -----------------------------RESPONSIVE---------------------- */
 /* Mobile */
-@media all and (max-width: 768px) {
+@media all and (max-width: 780px) 
+{
     .startForm {
         width: 100%;
         height: 100%;
@@ -415,19 +419,19 @@ body {
     .content.actived {
         bottom: 100px;
     }
-      .picture 
+    .picture 
     {
-        position:fixed;
+        position:absolute;
         size: 100px;
         bottom: 30px;
         width: 100px;
-        animation: animateBalloon 1s ease-in-out infinite alternate;
+        animation: animatePicture 1s ease-in-out infinite alternate;
         z-index: 5;
     }
     
     .picture1
     {
-        object-fit: cover;
+        object-fit: contain;
         object-position: bottom;
         left: 10px;
         width: 150px;
@@ -435,13 +439,15 @@ body {
     }
     .picture2 
     {
-        object-fit: cover;
+        object-fit: contain;
         object-position: bottom;
         right: 10px;
         width: 200px;
+    
 }
 
-@keyframes moveLight {
+@keyframes moveLight 
+{
     0% {
         opacity: 0;
         transform: translateY(0);
@@ -459,4 +465,5 @@ body {
         opacity: 0;
         transform: translateY(80vh);
     }
+}
 }
