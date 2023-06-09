@@ -413,6 +413,30 @@ body {
     .content.actived {
         bottom: 100px;
     }
+      .picture 
+    {
+        position:fixed;
+        size: 100px;
+        bottom: 30px;
+        width: 100px;
+        animation: animateBalloon 1s ease-in-out infinite alternate;
+        z-index: 5;
+    }
+    
+    .picture1
+    {
+        object-fit: cover;
+        object-position: bottom;
+        left: 25px;
+        width: 150px;
+        
+    }
+    .picture2 
+    {
+        object-fit: cover;
+        object-position: bottom;
+        right: 25px;
+        width: 200px;
 }
 
 @keyframes moveLight {
